@@ -78,7 +78,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='hidden md:block'>
-                    <a className='text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded-xl' href="#contact">Get in touch</a>
+                    <a onClick={(e)=>{e.preventDefault(); scrollToSection('contact')}} className='text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded-xl' href="#contact">Get in touch</a>
                 </div>
 
                 <div className='block md:hidden'>
@@ -94,7 +94,7 @@ const Navbar = () => {
                         {navLinks.props.children}
                         <li className='py-2 '>
                             <a className='text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded'
-                                onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
+                                onClick={(e) => { e.preventDefault(); scrollToSection('contact');}}
                                 href="#contact">
                                 Get in touch
                             </a>
