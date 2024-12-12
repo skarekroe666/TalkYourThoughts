@@ -102,8 +102,6 @@ const Navbar = () => {
                     </ul>
                 </nav>
             )}
-        </header>
-    );
-};
+        </header>);};
 
 export default Navbar;
